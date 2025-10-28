@@ -1,6 +1,6 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
-import { Aluno } from "./entity/Aluno";
+import { Aluno } from "./entity/Aluno.js";
 import dotenv from "dotenv";
 
 dotenv.config();
