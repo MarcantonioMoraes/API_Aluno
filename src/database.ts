@@ -1,17 +1,20 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
-import { Aluno } from "./entity/Aluno.js";
 import dotenv from "dotenv";
+import { Aluno } from "./entity/Aluno.js";
 
 dotenv.config();
 
 export const AppDataSource = new DataSource({
     type: "postgres",
-    host: process.env.DB_HOST,
-    port: Number(process.env.DB_PORT),
-    username: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
-    synchronize: true, // cria tabelas automaticamente
+    host: process.env.POSTGRES_HOST,
+    port: Number(process.env.POSTGRES_PORT),
+    username: process.env.POSTGRES_USER,
+    password: process.env.POSTGRES_PASSWORD,
+    database: process.env.POSTGRES_DB,
+    synchronize: true, // Apenas em desenvolvimento!
+    logging: true,
     entities: [Aluno],
+    subscribers: [],
+    migrations: [],
 });
