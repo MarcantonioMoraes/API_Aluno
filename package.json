@@ -1,0 +1,33 @@
+{
+  "name": "api_aluno",
+  "version": "1.0.0",
+  "description": "API REST completa que realiza operações CRUD (Create, Read, Update, Delete) sobre o cadastro de alunos de uma instituição de ensino, usando Node.js, Express e um ORM para o acesso ao banco de dados PostgreSQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcantonioMoraes/API_Aluno.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcantonioMoraes/API_Aluno/issues"
+  },
+  "homepage": "https://github.com/MarcantonioMoraes/API_Aluno#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.27"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
